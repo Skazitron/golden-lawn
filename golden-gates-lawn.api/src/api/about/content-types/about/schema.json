@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "abous",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abous",
+    "displayName": "About Us Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "team": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::person.person"
+    },
+    "main": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "mission": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

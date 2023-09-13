@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "career_pages",
+  "info": {
+    "singularName": "career-page",
+    "pluralName": "career-pages",
+    "displayName": "Career Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraph": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job"
+    }
+  }
+}
